@@ -1,0 +1,57 @@
+ NWP_Name          = NCEP025
+ CRTM_Coeff_Dir    = /users3/akey/CRTM_Process/CRTM_V1/CRTM_Coefficient/
+ CRTM_Sensor_ID    = ahi_himawari8
+ CRTM_n_clouds     = 4           ! 
+ CRTM_n_absorbers  = 2           ! H2O and O3
+ CRTM_n_aerosols   = 0           ! no aerosol
+ CRTM_n_output     = 4           ! number of CRTM output
+ CRTM_Force_ch     = 13          ! Force channel for saving time (0: for all CH)
+
+ AssignAngle       = 0           ! 0:off       1:on
+ Sensor_Angle_S    = 0.
+ Sensor_Angle_Z    = 0.
+ Source_Angle_Z    = 0.
+ Source_Angle_A    = 0.
+
+ Absorber1         = H2O
+ Absorber2         = O3
+ Absorber3         = 
+ Cloud1            = CloudWater
+ Cloud2            = CloudIce
+ Cloud3            = Rain
+ Cloud4            = Snow
+ Cloud5            =
+ Cloud6            =
+ CRTM_output1      = Brightness_Temp
+ CRTM_output2      = Radiance
+ CRTM_output3      = Up_R
+ CRTM_output4      = Surf_Plank_R
+ CRTM_output5      = 
+
+ Coeff_IRland      = 0           ! 0:NPOESS    1:USGS      2:IGBP
+ Coeff_IRwater     = 0           ! 0:Nalli     1:WuSmith
+ Coeff_MWwater     = 0           ! 0:FASTEM5   1:FASTEM4
+ Coeff_VISland     = 0           ! 0:NPOESS    1:USGS      2:IGBP
+*RT_Algorithm      = 0           ! 0:RT_SOI    1:RT_ADA
+ EffecR_Water      = 10.         ! default:  10 microns
+ EffecR_Ice        = 30.         ! default:  30 microns
+ EffecR_Rain       = 300.        ! default: 300 microns
+ EffecR_Snow       = 600.        ! default: 600 microns
+ EffecR_Graupel    = 600.        ! default: 600 microns
+
+ Ratio_Cloud_W     = 1.          ! Ratio of Cloud Water
+ Ratio_Cloud_I     = 1.          ! Ratio of Cloud Ice
+ Ratio_Cloud_R     = 1.          ! Ratio of Rain
+ Ratio_Cloud_S     = 1.          ! Ratio of Snow
+ Ratio_Cloud_G     = 1.          ! Ratio of Graupel
+ Ratio_Vapor       = 1.          ! Ratio of Vapor
+ Ratio_O3          = 1.          ! Ratio of O3
+
+
+!### Debug Check Setting ###
+ Debug_Main        = 1      ! 0:off  1:on   default: on
+ Debug_CRTMP       = 0      ! 0:off  1:on   default: off
+ Debug_ModelLoad   = 0      ! 0:off  1:on   default: off
+ Debug_CRTM        = 1      ! 0:off  1:on   default: off
+
+!end

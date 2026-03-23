@@ -1,0 +1,17 @@
+#HDF5_Path = /home/akey/LIBS/HDF_reader/hdf5-1.8.14/hdf5/
+#MOD_path_H5 = -I$(HDF5_Path)include
+#LIB_path_H5 = -L$(HDF5_Path)lib
+#LIB_name_H5 = -lhdf5_fortran
+#LIB_H5 = $(LIB_path_H5) $(LIB_name_H5)
+
+#HDF4_Path = /home/akey/LIBS/HDF_reader/hdf-4.2.10/hdf4/
+#LIB_path_H4 = -L$(HDF4_Path)lib
+#LIB_name_H4 = -lmfhdf -ldf -ljpeg -lz
+#LIB_H4 = $(LIB_path_H4) $(LIB_name_H4)
+
+CRTM_Path = /home/akey/CRTM_Process/CRTM_REL-2.1.3/
+MOD_path_CRTM = -I$(CRTM_Path)include
+LIB_path_CRTM = -L$(CRTM_Path)lib
+LIB_name_CRTM = -lCRTM
+LIB_CRTM = $(LIB_path_CRTM) $(LIB_name_CRTM)
+
